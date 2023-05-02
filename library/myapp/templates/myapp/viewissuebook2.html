@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>BOOKS ISSUED BY STUDENTS</h1><br>
+        
+        {%for book in bookobj%}
+        <hr>
+        {{book.bookid}}<br>
+        {{book.bookname}}<br>
+        {{book.bookdesc}}<br>
+        {%endfor%}
+        {%for book in studobj%}
+        {{book.studid}}<br>
+        {{book.studname}}<br>
+        {%endfor%}
+        <hr>
+    </body>
+</html>

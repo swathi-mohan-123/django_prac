@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>my app</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+
+    </script>
+    <script type="text/javascript" language="javascript">
+        //to ensure that first html page loads, then js
+        $(document).ready(function () {
+
+            $("#save_btn").hide();
+            var x = 0;
+            $("#add_btn").click(function () {
+                console.log("Button form clicked");
+                appendRow();
+                x++;
+                $("#save_btn").show();
+
+            })
+
+            function appendRow() {
+                $("#input_wrapper").append(
+
+                    '<div class="form-group"> <label> FIRST NAME</label> <br /><input type="text" class="form-control" /> < label > LAST NAME</label > < br />   <input type="text" class="form-control" /> <label> YOUR OPINION </label> <br /><textarea class="form-control" rows="10" cols="50"> </textarea > < br /> <div class="form-group"> < div class= "col-sm-10" > < button class= "btn btn-danger" > DELETE FORM</button ></div></div></div>'
+                );
+            }
+
+        });
+        </script>
+            </head >
+
+                <body>
+
+                    
+
+               
+
+   
+
+
+
+    <h1 class="text-center alert alert-danger">GENERATING DYNAMIC FORMS IN DJANGO </h1>
+    <div class="row">
+      
+        <div class="col-sm-4">
+            
+
+        </div>
+       
+        <div class="col-sm-4">
+            <form id="test_form" method="POST">
+                {% csrf_token %}
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div id="input-wrapper">
+                        <button id="save_btn" class="btn btn-success">SAVE</button>
+                        <button id="add_btn" class="btn btn-primary">ADD FORM</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    
+        <div class="col-sm-4">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  
+
+    </body>
+</html>

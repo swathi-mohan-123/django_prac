@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="{%url 'home2'%}" method="POST">
+        {%csrf_token%}
+        NAME: {{name}} <br />
+        ROLL NO.: {{roll}}<br />
+        SUBJECT: {{subject}}<br />
+        <button> RETURN TO PAGE 1</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>HI</h1>
+    <form action="{%url 'homesolved' %}" method="POST">
+        {% csrf_token %}
+        <div id="row">
+            <div id="col-12">
+                {{form.as_p}}
+            </div>
+            <div id="col-10">
+            <button style="background-color:aquamarine;height:35px;width:80px;" type="submit"><strong>LOGIN</strong> </button>
+            </div>
+            <div id="col-5">
+             
+
+            </div>
+            </div>
+    </form>
+</body>
+</html>

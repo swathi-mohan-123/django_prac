@@ -1,0 +1,32 @@
+<html>
+<head><title></title></head>
+
+<body>
+
+<form action="{%url 'search'%}" method="POST">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button> SEARCH </button>
+    <hr>
+
+        {%for detail in newdetails%}
+            {{detail.name}}<br>
+            {{detail.city}}<br>
+            {{detail.company}}<br>
+            {{detail.salary}}<br>
+            
+        
+        {%endfor%}
+
+       
+           
+            
+        
+      
+    
+
+
+
+</form>
+</body>
+</html>

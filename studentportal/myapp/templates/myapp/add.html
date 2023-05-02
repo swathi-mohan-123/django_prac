@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <form action="{%url 'add'%}" method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+
+<button> <h1> SUBMIT</h1></button>
+
+        </form>
+        <a href="{%url 'index'%}">BACK TO INDEX</a>
+    </body>
+</html>

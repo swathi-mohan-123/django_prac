@@ -1,0 +1,36 @@
+<html>
+<head><title>lab5 q1 form</title></head>
+
+<body>
+    <script type="text/javascript">
+        function processform() {
+            console.log("check")
+            var name = document.getElementById("name").value;
+            var addr = document.getElementById("addr").value;
+            var dob = document.getElementById("dob").value;
+            var num = document.getElementById("num").value;
+            var eng = document.getElementById("eng").value;
+            var phy = document.getElementById("phy").value;
+            var chem = document.getElementById("chem").value;
+            var tot = parseInt(eng) + parseInt(phy) + parseInt(chem);
+            var per = parseFloat(tot) / 300 * 100;
+            document.getElementById("total").value = per;
+            document.getElementById("result").value = name + "\n" + addr + "\n" + dob + "\n" + num + "\n" + eng + "\n" + phy + "\n" + chem + "\n";
+
+        }
+    </script>
+    Enter Name: <input type="text" id="name" /> <br />
+    Enter Address: <input type="text" id="addr" /><br />
+    Enter DOB: <input type="text" id="dob" /><br />
+    Enter Contact Number: <input type="text" id="num" /><br />
+    Enter English: <input type="text" id="eng" /><br />
+    Enter Physics: <input type="text" id="phy"/> <br />
+    Enter Chemistry: <input type="text" id="chem" /><br />
+    <br />
+    <button onclick="processform()"> SUBMIT </button><br /><br />
+    <hr />
+    <br />
+    Total Percentage: <input type="text" id="total" /><br />
+    <textarea id="result" rows="10" cols="50"></textarea>
+</body>
+</html>

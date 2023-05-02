@@ -1,0 +1,22 @@
+<html>
+    <body>
+    
+        <!--{%for stud in studobj%}-->
+        <hr>
+        {{stud.student_number}}<br>
+        {{stud.first_name}}<br>
+        {{stud.last_name}}<br>
+        {{stud.field_of_study}}<br>
+        {{stud.email}}<br>
+        {{stud.gpa}}<br>
+        
+        {{marksobj}}<br>
+        {{s}}
+        
+       
+        <hr>
+        <!--{%endfor%}-->
+       
+        <a href="{%url 'index'%}">BACK TO INDEX</a>
+    </body>
+</html>

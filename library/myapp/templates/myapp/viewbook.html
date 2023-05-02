@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>VIEW</h1>
+        {%for book in bookobj%}
+        <hr>
+        {{book.bookid}}<br>
+        {{book.bookname}}<br>
+        {{book.bookdesc}}<br>
+        {%endfor%}
+
+            <form action="{%url 'delete'%}" method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+            <button>DELETE</button>
+    </body>
+
+</html>

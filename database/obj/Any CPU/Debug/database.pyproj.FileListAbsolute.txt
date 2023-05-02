@@ -1,0 +1,2 @@
+C:\Users\Swathi\Desktop\python_work\python&django\database\obj\Any CPU\Debug\database.pyproj.SuggestedBindingRedirects.cache
+C:\Users\Swathi\Desktop\python_work\python&django\database\obj\Any CPU\Debug\database.pyproj.CoreCompileInputs.cache

@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <form action="{%url 'issuebook'%}" method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+            <button>ISSUE BOOK</button>  
+        </form>
+    </body>
+</html>

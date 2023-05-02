@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <form action="{%url 'search'%}" method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+            <button>SEARCH</button>
+        </form>
+        <br>
+        <hr>
+        {%for stud in list%}
+        <hr>
+        {{stud.student_number}}<br>
+        {{stud.first_name}}<br>
+        {{stud.last_name}}<br>
+        {{stud.field_of_study}}<br>
+        {{stud.email}}<br>
+        {{stud.gpa}}<br>
+        <hr>
+        {%endfor%}
+        
+        
+       
+        <a href="{%url 'index'%}">BACK TO INDEX</a>
+    </body>
+</html>

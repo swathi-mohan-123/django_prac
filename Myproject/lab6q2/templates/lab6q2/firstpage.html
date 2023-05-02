@@ -1,0 +1,14 @@
+<html>
+<head><title></title></head>
+
+<body>
+
+    <form action="{%url 'secondpage'%}" method="POST">
+        {% csrf_token%}
+        {{form.as_p}}
+        <button> SUBMIT </button>
+    </form>
+    
+
+</body>
+</html>

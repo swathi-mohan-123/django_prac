@@ -1,0 +1,15 @@
+<html>
+<head><title></title></head>
+
+<body>
+
+<form action="{%url 'homeadd1'%}" method="POST">
+    {%csrf_token%}
+    {{form.as_p}}
+    
+    <button>ADD ITEM</button>
+
+</form>
+
+</body>
+</html>

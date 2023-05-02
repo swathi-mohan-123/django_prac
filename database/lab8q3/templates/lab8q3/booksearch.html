@@ -1,0 +1,29 @@
+<html>
+<head><title></title></head>
+
+<body>
+<form action="{%url 'booksearch'%}" method="POST">
+    {%csrf_token%}
+    {{form.as_p}}
+    <table>
+        <tr>
+            <th>TITLE</th>
+            <th>DATE</th>
+            <th>AUTHOR</th>
+            <th>PUBLISHER</th>
+        </tr>
+        <tr>
+            <td>{{obj.title}}</td>
+            <td>{{obj.date}}</td>
+            <td>{{obj.aname}}</td>
+            <td>{{obj.pname.name}}</td>
+            
+
+        </tr>
+    </table>
+    <button>SUBMIT</button>
+     
+</form>
+
+</body>
+</html>

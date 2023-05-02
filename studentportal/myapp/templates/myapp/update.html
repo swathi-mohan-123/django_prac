@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <form action="{%url 'update'%}" method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+            <button>UPDATE</button>
+        </form>
+    </body>
+   
+</html>

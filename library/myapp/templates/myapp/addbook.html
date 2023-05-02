@@ -1,0 +1,15 @@
+<html>
+<head><title></title></head>
+
+<body>
+    <form action="{%url 'addbook'%}" method="POST">
+        {%csrf_token%}
+        {{form.as_p}}
+        <button> ADD BOOK </button>
+
+    </form>
+
+
+
+</body>
+</html>

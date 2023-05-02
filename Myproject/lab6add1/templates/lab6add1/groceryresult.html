@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table>
+        <th>
+        <td>ITEM NAME</td>
+        <td>ITEM PRICE</td>
+        </th>
+
+        {%for key,value in dict.items%}
+        <tr>
+            <td>
+                {{key}}
+            </td>
+            <td>
+                {{value}}
+            </td>
+        </tr>
+        {%endfor%}
+
+    </table>
+    
+    
+    <br />
+    
+    
+
+</body>
+</html>

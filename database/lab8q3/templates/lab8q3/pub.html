@@ -1,0 +1,12 @@
+<html>
+<head><title></title></head>
+
+<body>
+<form action="{%url 'pub'%}" method="POST">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button>SUBMIT</button>
+</form>
+
+</body>
+</html>

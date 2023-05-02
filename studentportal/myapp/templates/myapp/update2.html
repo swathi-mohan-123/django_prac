@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <form action="{%url 'update2' studentobj.student_number%}" method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+            <button>UPDATE</button>
+        </form>
+        I am updating {{fn}}'s records
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head><title></title></head>
+
+<body>
+    <h1> CREATE</h1>
+    <form action="{%url 'create1'%}" method="POST">
+        {%csrf_token%}
+        {{form.as_p}}
+        
+    </form>
+
+
+
+</body>
+</html>

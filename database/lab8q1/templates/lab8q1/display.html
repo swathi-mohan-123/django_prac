@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>CATEGORY TABLE</h1>
+    {%for category in categories%}
+        {{category.name}}<br>
+        {{category.numberofvisits}}<br>
+        {{category.numberoflikes}}<br>
+        
+    {%endfor%}
+
+    {{pages}}
+    <br />
+    <h1>PAGE TABLE</h1>
+    {%for page in pages%}
+        {{page.category}}<br>
+        {{page.title}}<br>
+        {{page.URL}}<br>
+        {{page.views}}<br>
+        
+    {%endfor%}
+    
+    <button><h3> <a href="{%url 'index1'%}">BACK </a></h3></button>
+</body>
+</html>

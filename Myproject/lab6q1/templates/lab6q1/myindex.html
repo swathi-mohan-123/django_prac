@@ -1,0 +1,13 @@
+<html>
+<head><title></title></head>
+
+<body>
+
+<form action="{%url 'home1' %}" method="post">
+    {% csrf_token%}
+    {{form.as_p}}
+    <button>SUBMIT</button>
+</form>
+
+</body>
+</html>

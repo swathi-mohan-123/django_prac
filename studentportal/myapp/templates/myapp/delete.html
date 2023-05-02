@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $("but").click(function(){
+                alert('Are you sure?')
+            })
+        </script>
+    </head>
+    <body>
+        <form action="{%url 'delete'%}" method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+            <button id="but">DELETE</button>
+            
+        </form>
+        The record {{student_number}} is deleted
+        <a href="{%url 'display'%}">DISPLAY</a>
+        <a href="{%url 'index'%}">INDEX</a>
+    </body>
+</html>

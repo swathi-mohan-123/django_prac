@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+    $('#but').click(function(){
+        <label> FIRST NAME </label>
+        
+    })
+    </script>
+</head>
+
+
+<body>
+    <form action="{%url 'display2'%}" method="POST">
+        {%csrf_token%}
+        {{form.as_p}}
+        <button id="but">SUBMIT</button>
+
+        
+    </form>
+    
+</body>
+</html>
